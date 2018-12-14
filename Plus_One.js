@@ -31,6 +31,5 @@ function plusOne(digits)
 
   return digits;
 }
-//var String= process.argv[2];
-//console.log(plusOne(String));
-console.log(plusOne([4,3,2,1]));
+var array= process.argv.slice(2);
+console.log(plusOne(array));
