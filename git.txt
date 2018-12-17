@@ -1,0 +1,44 @@
+# Get the code
+cd ~/r
+git clone git@github.com:JeyaMani/play.git
+
+# Make changes to code
+
+# Check the status of the repo.  This will list modifications.
+git status
+
+# Add the changes that you want to commit
+git add AddDigits.js
+
+# Check the status again
+git status
+
+# Commit
+git commit -m "Fixed the comments and deleted some old commented-out code."
+
+# Don't forget to push your changes up to GitHub
+git push
+
+# If the git push doesn't work, add the person who's pushing (the
+# pusher) to the collaborators for the project.
+
+# Create a branch
+git checkout master
+git pull
+git checkout -b dc-1
+
+# To see a list of branches (with an asterisk next to your current branch) 
+git branch
+
+# Let's make a change to the code.
+
+# Now, let's commit that change
+git add MoveZeros.js
+git commit -m "Fixed the comments and removed an unnecessary line."
+
+# Set up a dc-1 branch in the origin (GitHub)
+git push -u origin dc-1
+
+# Delete a local and a remote branch
+git branch -d branch-to-delete
+git push origin :branch-to-delete
