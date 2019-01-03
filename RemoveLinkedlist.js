@@ -1,4 +1,12 @@
 #!/usr/bin/env node
+/*
+Remove all elements from a linked list of integers that have value val.
+
+Example:
+
+Input:  1->2->6->3->4->5->6, val = 6
+Output: 1->2->3->4->5
+*/
 
 function myRemove(l, k){
     if(l == null){
@@ -21,4 +29,4 @@ function myRemove(l, k){
     }
     return l;
 }
-console.log(myRemove(6));
+console.log(myRemove((1->2->6->3->4->5->6), 6));
