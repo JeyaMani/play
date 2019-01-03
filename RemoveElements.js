@@ -14,26 +14,6 @@ Your function should return length = 2, with the first two elements of nums bein
 
 It doesn't matter what you leave beyond the returned length.
 */
-/*
-function removeElement (nums, val) {
-  for (var i = nums.length - 1; i > -1; i--)
-      {
-          if (nums[i] === val)
-              {
-                  nums.splice(i, 1);
-                  return nums;
-              }
-      }
-}
-console.log(removeElement([1, 2, 3, 4, 5], 2));
-*/
-/*
-function cull_array(nums, val) {
-    return nums.filter((n) => n != val).length;
-}
-
-console.log(cull_array([3, 3, 4, 5, 6, 3], 3));
-*/
 
 function cull_array(nums, val) {
     var i= 0;
@@ -50,4 +30,4 @@ function cull_array(nums, val) {
     return length;
 }
 
-console.log(cull_array([3, 3, 4, 5, 6, 3], 3));
+console.log(cull_array([3, 2, 2, 3], 3));
